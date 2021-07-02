@@ -2,3 +2,30 @@
 	margin: 0;
 	padding: 0;
 }
+
+#member {
+	color: #0000ff;
+}
+
+/* Style main image */
+#hill-image {
+	text-align: center;
+	padding: 10px;
+}
+
+.panorama-hill {
+	width: 50%;
+	height: auto;
+}
+
+/* Style the footer */
+footer {
+	text-align: center;
+  padding: 5px;
+  background-color: #a09e9e;
+  color: #ffffff;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height: 35px;   /* Height of the footer */
+}

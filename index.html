@@ -16,11 +16,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="images/hand-water.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> Panorama
           Hills Water Company</a>
@@ -50,22 +51,22 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">Your Water</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Water Quality</a></li>
+                  <li><a class="dropdown-item" href="water-quality.html">Water Quality</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Water Emergency Information</a></li>
+                  <li><a class="dropdown-item" href="water-emergency.html">Water Emergency Information</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Water Conservation Tips</a></li>
+                  <li><a class="dropdown-item" href="water-conservation.html">Water Conservation Tips</a></li>
                 </ul>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="contact.html" id="navbarDropdown" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">PHWC Board Members</a></li>
+                  <li><a class="dropdown-item" href="contact.html">PHWC Board Members</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
@@ -74,12 +75,33 @@
               </li>
             </ul>
             <form class="d-flex">
-              <button class="btn btn-primary" type="submit">Pay Bill Online</button>
+              <button class="btn btn-primary" type="button" onclick="payBill()">Pay Bill Online</button>
             </form>
           </div>
         </div>
       </div>
     </nav>
+
+    <section id=" content" class="container">
+      <div id="hill-image">
+        <img src="./images/panorama-hill.jpg" alt="Panorama Hill" class="panorama-hill">
+      </div>
+
+      <h1>Panorama Hills Water Company</h1>
+      <p>Need content...</p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+        laoreet
+        dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper
+        suscipit
+        lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      <p></p>
+      <p></p>
+    </section>
   </body>
+
+  <footer>
+    <p>Copyright 2021 &#169; Hunter Development</p>
+  </footer>
 
 </html>
