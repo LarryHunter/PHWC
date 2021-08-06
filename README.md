@@ -1,7 +1,7 @@
 # PHWC
 Panorama Hills Water Company
 
-This is a mock-up website for the PHWC.
+This is a work in progress website for the PHWC.
 
 ## Built with
 
