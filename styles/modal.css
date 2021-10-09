@@ -1,0 +1,94 @@
+/* Style the modal window here */
+.modal {
+  --gap: 15px;
+  font-family: sans-serif;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Take up all of the viewable screen */
+  width: 100vw;
+  height: 100vh;
+
+  /* Center the content of the modal */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Create the box border and background for the modal */
+  box-sizing: border-box;
+  padding: var(--gap);
+  background: rgba(0, 0, 0, 0.5); /* 50% opaque background */
+}
+
+/* Style the inner part of the modal */
+.modal__inner {
+  background: #ffffff;
+  /* Set the width of the modal to 100% up to 800px */
+  width: 100%;
+  max-width: 800px;
+
+  /* Set the corners of the modal to be rounded */
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+/* Style just the top section of the modal */
+.modal__top {
+  display: flex;
+  align-items: center;
+  background: #eeeeee;
+}
+
+/* Style the title to take up all the space in the title minus the close button */
+.modal__title {
+  flex-grow: 1;
+  padding: 0 var(--gap);
+  font-size: 20px;
+}
+
+/* Style the close button on the modal */
+.modal__close {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: var(--gap);
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Style the content inside the modal */
+.modal__content {
+  padding: 0 var(--gap);
+  line-height: 1.5;
+}
+
+/* Style the bottom of the modal */
+.modal__bottom {
+  text-align: right;
+  padding: 0 var(--gap) var(--gap) var(--gap);
+}
+
+/* Style the button on bottom of the modal */
+.modal__button {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #009578;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the button to be darken when hovering over */
+.modal__button:hover {
+  background: #008066;
+}
+
+/* Style multiple buttons with a space in between */
+.modal__button:not(:last-child) {
+  margin-right: var(--gap);
+}
